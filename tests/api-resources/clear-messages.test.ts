@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import Agentbase from 'agentbase';
+import Agentbase from 'agentbase-sdk';
 
 const client = new Agentbase({
   apiKey: 'My API Key',

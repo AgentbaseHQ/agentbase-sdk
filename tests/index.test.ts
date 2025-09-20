@@ -1,10 +1,10 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { APIPromise } from 'agentbase/core/api-promise';
+import { APIPromise } from 'agentbase-sdk/core/api-promise';
 
 import util from 'node:util';
-import Agentbase from 'agentbase';
-import { APIUserAbortError } from 'agentbase';
+import Agentbase from 'agentbase-sdk';
+import { APIUserAbortError } from 'agentbase-sdk';
 const defaultFetch = fetch;
 
 describe('instantiate client', () => {

@@ -55,12 +55,12 @@ $ cd agentbase-sdk
 # With yarn
 $ yarn link
 $ cd ../my-package
-$ yarn link agentbase
+$ yarn link agentbase-sdk
 
 # With pnpm
 $ pnpm link --global
 $ cd ../my-package
-$ pnpm link -—global agentbase
+$ pnpm link -—global agentbase-sdk
 ```
 
 ## Running tests

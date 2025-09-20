@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "agentbase/*": ["dist/src/*"],
-      "agentbase": ["dist/src/index.ts"]
+      "agentbase-sdk/*": ["dist/src/*"],
+      "agentbase-sdk": ["dist/src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,
