@@ -1,6 +1,6 @@
 import assert from 'assert';
-import { _iterSSEMessages } from 'agentbase/core/streaming';
-import { ReadableStreamFrom } from 'agentbase/internal/shims';
+import { _iterSSEMessages } from 'agentbase-sdk/core/streaming';
+import { ReadableStreamFrom } from 'agentbase-sdk/internal/shims';
 
 describe('streaming decoding', () => {
   test('basic', async () => {

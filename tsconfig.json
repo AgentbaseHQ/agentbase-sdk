@@ -9,8 +9,8 @@
     "esModuleInterop": true,
     "baseUrl": "./",
     "paths": {
-      "agentbase/*": ["src/*"],
-      "agentbase": ["src/index.ts"]
+      "agentbase-sdk/*": ["src/*"],
+      "agentbase-sdk": ["src/index.ts"]
     },
     "noEmit": true,
 
