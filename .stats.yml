@@ -1,0 +1,4 @@
+configured_endpoints: 3
+openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/agentbase%2Fagentbase-13add9c9c3dab9f993d0f5aa152a2c1ce799dbde5ee3ea195726e47f3963818d.yml
+openapi_spec_hash: 06f974625a31ff86b27dc68c07f83227
+config_hash: a6217d6b638f2fb9d49183ec622762e3
