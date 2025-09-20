@@ -1,12 +1,12 @@
 {
   "name": "agentbase",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "The official TypeScript library for the Agentbase API",
   "author": "Agentbase <>",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "type": "commonjs",
-  "repository": "github:stainless-sdks/agentbase-typescript",
+  "repository": "github:AgentbaseHQ/agentbase-sdk",
   "license": "Apache-2.0",
   "packageManager": "yarn@1.22.22",
   "files": [
