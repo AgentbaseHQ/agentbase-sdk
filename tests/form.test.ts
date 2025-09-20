@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'agentbase/internal/uploads';
-import { toFile } from 'agentbase/core/uploads';
+import { multipartFormRequestOptions, createForm } from 'agentbase-sdk/internal/uploads';
+import { toFile } from 'agentbase-sdk/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {
