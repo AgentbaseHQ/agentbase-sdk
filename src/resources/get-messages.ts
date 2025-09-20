@@ -6,10 +6,9 @@ import { RequestOptions } from '../internal/request-options';
 
 export class GetMessages extends APIResource {
   /**
-   * Retrieve the entire message history for a given agent
-   * session【422460015970428†L110-L141】.
+   * Retrieve the entire message history for a given agent session.
    * Messages include user messages, the agent’s internal thoughts, agent responses,
-   * and tool usage records【422460015970428†L145-L169】.
+   * and tool usage records.
    */
   retrieve(
     params: GetMessageRetrieveParams,
@@ -25,13 +24,13 @@ export type GetMessageRetrieveResponse = Array<GetMessageRetrieveResponse.GetMes
 export namespace GetMessageRetrieveResponse {
   export interface GetMessageRetrieveResponseItem {
     /**
-     * The textual content of the message.【422460015970428†L117-L139】
+     * The textual content of the message.
      */
     content: string;
 
     /**
      * Type of the message (e.g., user_message, agent_thinking, agent_response,
-     * agent_tool_use)【422460015970428†L145-L169】.
+     * agent_tool_use).
      */
     type: string;
   }
@@ -39,7 +38,7 @@ export namespace GetMessageRetrieveResponse {
 
 export interface GetMessageRetrieveParams {
   /**
-   * The session ID to retrieve messages from【422460015970428†L99-L106】.
+   * The session ID to retrieve messages from.
    */
   session: string;
 }

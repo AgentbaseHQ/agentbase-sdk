@@ -6,7 +6,7 @@ import { RequestOptions } from '../internal/request-options';
 
 export class ClearMessages extends APIResource {
   /**
-   * Clear all messages from a given agent session【4430954703616†L73-L98】.
+   * Clear all messages from a given agent session.
    */
   clear(params: ClearMessageClearParams, options?: RequestOptions): APIPromise<ClearMessageClearResponse> {
     const { session } = params;
@@ -16,19 +16,19 @@ export class ClearMessages extends APIResource {
 
 export interface ClearMessageClearResponse {
   /**
-   * Human‑readable status message.【4430954703616†L88-L97】
+   * Human‑readable status message.
    */
   message?: string;
 
   /**
-   * Indicates whether messages were successfully cleared.【4430954703616†L88-L97】
+   * Indicates whether messages were successfully cleared.
    */
   success?: boolean;
 }
 
 export interface ClearMessageClearParams {
   /**
-   * The session ID to clear messages from【4430954703616†L73-L98】.
+   * The session ID to clear messages from.
    */
   session: string;
 }

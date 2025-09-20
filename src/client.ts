@@ -211,7 +211,7 @@ export class Agentbase {
    * Run an agent on a task or message.
    * A new session can be created by omitting the `session` query parameter, or an
    * existing session can be continued by specifying the session ID in the `session`
-   * query parameter【360266723038398†L99-L106】.
+   * query parameter.
    * The request body includes the message, optional system prompt, mode, MCP server
    * configuration, optional rules and whether the response should be streamed.
    * The response is a streaming response and returns a sequence of events
