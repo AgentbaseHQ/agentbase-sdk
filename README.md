@@ -1,5 +1,9 @@
 # Agentbase TypeScript API Library
 
+This is the official TypeScript library for the Agentbase API (https://www.agentbase.sh).
+
+Visit the Agentbase API documentation [here](https://docs.agentbase.sh/).
+
 [![NPM version](<https://img.shields.io/npm/v/agentbase-sdk.svg?label=npm%20(stable)>)](https://npmjs.org/package/agentbase-sdk) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/agentbase-sdk)
 
 This library provides convenient access to the Agentbase REST API from server-side TypeScript or JavaScript.
