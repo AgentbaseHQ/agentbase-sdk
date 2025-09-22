@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.1.2 (2025-09-22)
+
+Full Changelog: [v0.1.1...v0.1.2](https://github.com/AgentbaseHQ/agentbase-sdk/compare/v0.1.1...v0.1.2)
+
+### Chores
+
+* configure new SDK language ([cd10853](https://github.com/AgentbaseHQ/agentbase-sdk/commit/cd10853fdfc91213c8eaf0651b4d63120966f2e1))
+* update readme ([e8d5902](https://github.com/AgentbaseHQ/agentbase-sdk/commit/e8d59021fa786f0d5baa37f8f18543ea56b8edac))
+* update SDK settings ([1e0bf18](https://github.com/AgentbaseHQ/agentbase-sdk/commit/1e0bf187835f7f56cc418a55c69a95d542899f8b))
+* update SDK settings ([f64f05b](https://github.com/AgentbaseHQ/agentbase-sdk/commit/f64f05b056aa1af2c32b2d9f94418e5a721be1e8))
+
 ## 0.1.1 (2025-09-20)
 
 Full Changelog: [v0.1.0...v0.1.1](https://github.com/AgentbaseHQ/agentbase-sdk/compare/v0.1.0...v0.1.1)
