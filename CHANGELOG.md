@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.1.3 (2025-09-27)
+
+Full Changelog: [v0.1.2...v0.1.3](https://github.com/AgentbaseHQ/agentbase-sdk/compare/v0.1.2...v0.1.3)
+
+### Performance Improvements
+
+* faster formatting ([e7d52bd](https://github.com/AgentbaseHQ/agentbase-sdk/commit/e7d52bdf3ad2ae700939d7167b4b649cb0feb3cf))
+
+
+### Chores
+
+* **internal:** codegen related update ([efbe40a](https://github.com/AgentbaseHQ/agentbase-sdk/commit/efbe40ac41059694948567e014e8b23ce33b1dcb))
+* **internal:** fix incremental formatting in some cases ([1caee30](https://github.com/AgentbaseHQ/agentbase-sdk/commit/1caee30cec5ee9e00cc7408c762c4d9d381c1ed2))
+* **internal:** ignore .eslintcache ([8a1dda7](https://github.com/AgentbaseHQ/agentbase-sdk/commit/8a1dda7d478b9ebc27f074e92f491e58cedef5c2))
+* **internal:** remove deprecated `compilerOptions.baseUrl` from tsconfig.json ([f07ddbe](https://github.com/AgentbaseHQ/agentbase-sdk/commit/f07ddbe0844f90e3cebbc474a06316b0243d11d1))
+
 ## 0.1.2 (2025-09-22)
 
 Full Changelog: [v0.1.1...v0.1.2](https://github.com/AgentbaseHQ/agentbase-sdk/compare/v0.1.1...v0.1.2)
