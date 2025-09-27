@@ -7,10 +7,9 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "baseUrl": "./",
     "paths": {
-      "agentbase-sdk/*": ["src/*"],
-      "agentbase-sdk": ["src/index.ts"]
+      "agentbase-sdk/*": ["./src/*"],
+      "agentbase-sdk": ["./src/index.ts"]
     },
     "noEmit": true,
 
