@@ -25,6 +25,7 @@ describe('top level methods', () => {
     const response = await client.runAgent({
       message: 'message',
       session: 'session',
+      datastores: [{ id: 'id', name: 'name' }],
       mcp_servers: [{ serverName: 'serverName', serverUrl: 'https://example.com' }],
       mode: 'flash',
       rules: ['string'],
