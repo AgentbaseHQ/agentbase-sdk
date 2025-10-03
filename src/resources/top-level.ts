@@ -15,6 +15,12 @@ export interface RunAgentParams {
   session?: string;
 
   /**
+   * Body param: A set of datastores for the agent to utilize. Each object must
+   * include a `id` and `name`.
+   */
+  datastores?: Array<RunAgentParams.Datastore>;
+
+  /**
    * Body param: A list of MCP server configurations. Each object must include a
    * `serverName` and `serverUrl`.
    */
@@ -43,6 +49,18 @@ export interface RunAgentParams {
 }
 
 export namespace RunAgentParams {
+  export interface Datastore {
+    /**
+     * The ID of the datastore.
+     */
+    id: string;
+
+    /**
+     * The name of the datastore.
+     */
+    name: string;
+  }
+
   export interface McpServer {
     /**
      * Name of the MCP server.
