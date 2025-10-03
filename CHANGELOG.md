@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.2.0 (2025-10-03)
+
+Full Changelog: [v0.1.2...v0.2.0](https://github.com/AgentbaseHQ/agentbase-sdk/compare/v0.1.2...v0.2.0)
+
+### Features
+
+* **api:** manual updates for parameter updates ([1b8b7c3](https://github.com/AgentbaseHQ/agentbase-sdk/commit/1b8b7c3890339f8186b8b0f07e600c3716a71e0d))
+
+
+### Performance Improvements
+
+* faster formatting ([e7d52bd](https://github.com/AgentbaseHQ/agentbase-sdk/commit/e7d52bdf3ad2ae700939d7167b4b649cb0feb3cf))
+
+
+### Chores
+
+* **internal:** codegen related update ([efbe40a](https://github.com/AgentbaseHQ/agentbase-sdk/commit/efbe40ac41059694948567e014e8b23ce33b1dcb))
+* **internal:** fix incremental formatting in some cases ([1caee30](https://github.com/AgentbaseHQ/agentbase-sdk/commit/1caee30cec5ee9e00cc7408c762c4d9d381c1ed2))
+* **internal:** ignore .eslintcache ([8a1dda7](https://github.com/AgentbaseHQ/agentbase-sdk/commit/8a1dda7d478b9ebc27f074e92f491e58cedef5c2))
+* **internal:** remove .eslintcache ([a72076a](https://github.com/AgentbaseHQ/agentbase-sdk/commit/a72076af0d778b8973afd5a015820454022635f3))
+* **internal:** remove deprecated `compilerOptions.baseUrl` from tsconfig.json ([f07ddbe](https://github.com/AgentbaseHQ/agentbase-sdk/commit/f07ddbe0844f90e3cebbc474a06316b0243d11d1))
+
 ## 0.1.2 (2025-09-22)
 
 Full Changelog: [v0.1.1...v0.1.2](https://github.com/AgentbaseHQ/agentbase-sdk/compare/v0.1.1...v0.1.2)
