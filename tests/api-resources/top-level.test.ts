@@ -25,10 +25,10 @@ describe('top level methods', () => {
     const response = await client.runAgent({
       message: 'message',
       session: 'session',
-      mcpServers: [{ serverName: 'serverName', serverUrl: 'https://example.com' }],
+      mcp_servers: [{ serverName: 'serverName', serverUrl: 'https://example.com' }],
       mode: 'flash',
       rules: ['string'],
-      streaming: true,
+      streaming_tokens: true,
       system: 'system',
     });
   });

@@ -18,7 +18,7 @@ export interface RunAgentParams {
    * Body param: A list of MCP server configurations. Each object must include a
    * `serverName` and `serverUrl`.
    */
-  mcpServers?: Array<RunAgentParams.McpServer>;
+  mcp_servers?: Array<RunAgentParams.McpServer>;
 
   /**
    * Body param: The agent mode. Allowed values are `flash`, `fast` or `max`.
@@ -34,7 +34,7 @@ export interface RunAgentParams {
   /**
    * Body param: Whether to stream the agent messages token by token.
    */
-  streaming?: boolean;
+  streaming_tokens?: boolean;
 
   /**
    * Body param: A system prompt to provide system information to the agent.
