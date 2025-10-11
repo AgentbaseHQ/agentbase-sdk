@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.0 (2025-10-11)
+
+Full Changelog: [v0.3.1...v0.4.0](https://github.com/AgentbaseHQ/agentbase-sdk/compare/v0.3.1...v0.4.0)
+
+### Features
+
+* **api:** manual updates ([ec73d2b](https://github.com/AgentbaseHQ/agentbase-sdk/commit/ec73d2b66e89d4e9b8b837f26d6736d593162854))
+
 ## 0.3.1 (2025-10-07)
 
 Full Changelog: [v0.3.0...v0.3.1](https://github.com/AgentbaseHQ/agentbase-sdk/compare/v0.3.0...v0.3.1)

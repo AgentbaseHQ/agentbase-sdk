@@ -7,10 +7,10 @@ const client = new Agentbase({
   baseURL: process.env['TEST_API_BASE_URL'] ?? 'http://127.0.0.1:4010',
 });
 
-describe('top level methods', () => {
+describe('resource agent', () => {
   // Prism doesn't support text/event-stream responses
-  test.skip('runAgent: only required params', async () => {
-    const responsePromise = client.runAgent({ message: 'message' });
+  test.skip('run: only required params', async () => {
+    const responsePromise = client.agent.run({ message: 'message' });
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
     const response = await responsePromise;
@@ -21,8 +21,8 @@ describe('top level methods', () => {
   });
 
   // Prism doesn't support text/event-stream responses
-  test.skip('runAgent: required and optional params', async () => {
-    const response = await client.runAgent({
+  test.skip('run: required and optional params', async () => {
+    const response = await client.agent.run({
       message: 'message',
       session: 'session',
       background: true,

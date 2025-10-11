@@ -8,22 +8,24 @@ Methods:
 
 - <code title="post /">client.<a href="./src/index.ts">runAgent</a>({ ...params }) -> string</code>
 
-# GetMessages
+# Agent
 
 Types:
 
-- <code><a href="./src/resources/get-messages.ts">GetMessageRetrieveResponse</a></code>
+- <code><a href="./src/resources/agent.ts">AgentRunResponse</a></code>
 
 Methods:
 
-- <code title="post /get-messages">client.getMessages.<a href="./src/resources/get-messages.ts">retrieve</a>({ ...params }) -> GetMessageRetrieveResponse</code>
+- <code title="post /">client.agent.<a href="./src/resources/agent.ts">run</a>({ ...params }) -> string</code>
 
-# ClearMessages
+# Messages
 
 Types:
 
-- <code><a href="./src/resources/clear-messages.ts">ClearMessageClearResponse</a></code>
+- <code><a href="./src/resources/messages.ts">MessageClearResponse</a></code>
+- <code><a href="./src/resources/messages.ts">MessageGetResponse</a></code>
 
 Methods:
 
-- <code title="post /clear-messages">client.clearMessages.<a href="./src/resources/clear-messages.ts">clear</a>({ ...params }) -> ClearMessageClearResponse</code>
+- <code title="post /clear-messages">client.messages.<a href="./src/resources/messages.ts">clear</a>({ ...params }) -> MessageClearResponse</code>
+- <code title="post /get-messages">client.messages.<a href="./src/resources/messages.ts">get</a>({ ...params }) -> MessageGetResponse</code>
