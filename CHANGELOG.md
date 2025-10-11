@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.1 (2025-10-07)
+
+Full Changelog: [v0.3.0...v0.3.1](https://github.com/AgentbaseHQ/agentbase-sdk/compare/v0.3.0...v0.3.1)
+
+### Chores
+
+* **internal:** use npm pack for build uploads ([577a748](https://github.com/AgentbaseHQ/agentbase-sdk/commit/577a74883e433d19f138956cdad68bbc6d739083))
+* **jsdoc:** fix [@link](https://github.com/link) annotations to refer only to parts of the package‘s public interface ([b9200cf](https://github.com/AgentbaseHQ/agentbase-sdk/commit/b9200cf682bd4153093a3c98ddf16489b48b2b0c))
+
 ## 0.3.0 (2025-10-03)
 
 Full Changelog: [v0.2.0...v0.3.0](https://github.com/AgentbaseHQ/agentbase-sdk/compare/v0.2.0...v0.3.0)
