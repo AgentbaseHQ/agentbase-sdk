@@ -1,8 +1,37 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-export type RunAgentResponse = string;
+import { APIResource } from '../core/resource';
+import { APIPromise } from '../core/api-promise';
+import { Stream } from '../core/streaming';
+import { buildHeaders } from '../internal/headers';
+import { RequestOptions } from '../internal/request-options';
 
-export interface RunAgentParams {
+export class Agent extends APIResource {
+  /**
+   * Run an agent on a task or message.
+   * A new session can be created by omitting the `session` query parameter, or an
+   * existing session can be continued by specifying the session ID in the `session`
+   * query parameter.
+   * The request body includes the message, optional system prompt, mode, MCP server
+   * configuration, optional rules and whether the response should be streamed.
+   * The response is a streaming response and returns a sequence of events
+   * representing the agent’s thoughts and responses.
+   */
+  run(params: AgentRunParams, options?: RequestOptions): APIPromise<Stream<AgentRunResponse>> {
+    const { session, ...body } = params;
+    return this._client.post('/', {
+      query: { session },
+      body,
+      ...options,
+      headers: buildHeaders([{ Accept: 'text/event-stream' }, options?.headers]),
+      stream: true,
+    }) as APIPromise<Stream<AgentRunResponse>>;
+  }
+}
+
+export type AgentRunResponse = string;
+
+export interface AgentRunParams {
   /**
    * Body param: The task or message to run the agent with.
    */
@@ -24,26 +53,26 @@ export interface RunAgentParams {
    * Body param: A callback endpoint configuration to send agent message events back
    * to. Use with background true.
    */
-  callback?: RunAgentParams.Callback;
+  callback?: AgentRunParams.Callback;
 
   /**
    * Body param: A set of datastores for the agent to utilize. Each object must
    * include a `id` and `name`.
    */
-  datastores?: Array<RunAgentParams.Datastore>;
+  datastores?: Array<AgentRunParams.Datastore>;
 
   /**
    * Body param: Configuration for an extra final output event that processes the
    * entire agent message thread and produces a structured output based on the
    * provided JSON schema.
    */
-  final_output?: RunAgentParams.FinalOutput;
+  final_output?: AgentRunParams.FinalOutput;
 
   /**
    * Body param: A list of MCP server configurations. Each object must include a
    * `serverName` and `serverUrl`.
    */
-  mcp_servers?: Array<RunAgentParams.McpServer>;
+  mcp_servers?: Array<AgentRunParams.McpServer>;
 
   /**
    * Body param: The agent mode. Allowed values are `flash`, `fast` or `max`.
@@ -56,7 +85,7 @@ export interface RunAgentParams {
    * Allows you to quickly define actions that the agent can use to query your
    * datastores.
    */
-  queries?: Array<RunAgentParams.Query>;
+  queries?: Array<AgentRunParams.Query>;
 
   /**
    * Body param: A list of constraints that the agent must follow.
@@ -78,10 +107,10 @@ export interface RunAgentParams {
    * workflow is a DAG (Directed Acyclic Graph) of steps that the agent interprets
    * and executes dynamically.
    */
-  workflows?: Array<RunAgentParams.Workflow>;
+  workflows?: Array<AgentRunParams.Workflow>;
 }
 
-export namespace RunAgentParams {
+export namespace AgentRunParams {
   /**
    * A callback endpoint configuration to send agent message events back to. Use with
    * background true.
@@ -234,6 +263,6 @@ export namespace RunAgentParams {
   }
 }
 
-export declare namespace TopLevel {
-  export { type RunAgentResponse as RunAgentResponse, type RunAgentParams as RunAgentParams };
+export declare namespace Agent {
+  export { type AgentRunResponse as AgentRunResponse, type AgentRunParams as AgentRunParams };
 }
