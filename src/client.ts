@@ -20,12 +20,14 @@ import * as TopLevelAPI from './resources/top-level';
 import { RunAgentParams, RunAgentResponse } from './resources/top-level';
 import { APIPromise } from './core/api-promise';
 import { Stream } from './core/streaming';
+import { Agent, AgentRunParams, AgentRunResponse } from './resources/agent';
 import {
-  ClearMessageClearParams,
-  ClearMessageClearResponse,
-  ClearMessages,
-} from './resources/clear-messages';
-import { GetMessageRetrieveParams, GetMessageRetrieveResponse, GetMessages } from './resources/get-messages';
+  MessageClearParams,
+  MessageClearResponse,
+  MessageGetParams,
+  MessageGetResponse,
+  Messages,
+} from './resources/messages';
 import { type Fetch } from './internal/builtin-types';
 import { HeadersLike, NullableHeaders, buildHeaders } from './internal/headers';
 import { FinalRequestOptions, RequestOptions } from './internal/request-options';
@@ -747,27 +749,25 @@ export class Agentbase {
 
   static toFile = Uploads.toFile;
 
-  getMessages: API.GetMessages = new API.GetMessages(this);
-  clearMessages: API.ClearMessages = new API.ClearMessages(this);
+  agent: API.Agent = new API.Agent(this);
+  messages: API.Messages = new API.Messages(this);
 }
 
-Agentbase.GetMessages = GetMessages;
-Agentbase.ClearMessages = ClearMessages;
+Agentbase.Agent = Agent;
+Agentbase.Messages = Messages;
 
 export declare namespace Agentbase {
   export type RequestOptions = Opts.RequestOptions;
 
   export { type RunAgentResponse as RunAgentResponse, type RunAgentParams as RunAgentParams };
 
-  export {
-    GetMessages as GetMessages,
-    type GetMessageRetrieveResponse as GetMessageRetrieveResponse,
-    type GetMessageRetrieveParams as GetMessageRetrieveParams,
-  };
+  export { Agent as Agent, type AgentRunResponse as AgentRunResponse, type AgentRunParams as AgentRunParams };
 
   export {
-    ClearMessages as ClearMessages,
-    type ClearMessageClearResponse as ClearMessageClearResponse,
-    type ClearMessageClearParams as ClearMessageClearParams,
+    Messages as Messages,
+    type MessageClearResponse as MessageClearResponse,
+    type MessageGetResponse as MessageGetResponse,
+    type MessageClearParams as MessageClearParams,
+    type MessageGetParams as MessageGetParams,
   };
 }
