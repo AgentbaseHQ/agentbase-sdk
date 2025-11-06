@@ -15,6 +15,14 @@ export interface RunAgentParams {
   session?: string;
 
   /**
+   * Body param: A set of agent configurations that enables the agent to transfer
+   * conversations to other specialized agents. When provided, the main agent will
+   * have access to seamless handoffs between agents based on the conversation
+   * context.
+   */
+  agents?: Array<RunAgentParams.Agent>;
+
+  /**
    * Body param: Whether to run the agent asynchronously on the server. When set to
    * true, use callback parameter to receive events.
    */
@@ -82,6 +90,18 @@ export interface RunAgentParams {
 }
 
 export namespace RunAgentParams {
+  export interface Agent {
+    /**
+     * Description of what this agent handles
+     */
+    description: string;
+
+    /**
+     * The name of the agent to transfer to
+     */
+    name: string;
+  }
+
   /**
    * A callback endpoint configuration to send agent message events back to. Use with
    * background true.

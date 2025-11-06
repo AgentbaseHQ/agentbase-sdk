@@ -25,6 +25,7 @@ describe('resource agent', () => {
     const response = await client.agent.run({
       message: 'message',
       session: 'session',
+      agents: [{ description: 'description', name: 'name' }],
       background: true,
       callback: { url: 'https://example.com', headers: { foo: 'string' } },
       datastores: [{ id: 'id', name: 'name' }],
