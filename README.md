@@ -29,24 +29,6 @@ const client = new Agentbase({
 const response = await client.runAgent({ message: 'REPLACE_ME' });
 ```
 
-## Streaming responses
-
-We provide support for streaming responses using Server Sent Events (SSE).
-
-```ts
-import Agentbase from 'agentbase-sdk';
-
-const client = new Agentbase();
-
-const stream = await client.runAgent({ message: 'REPLACE_ME' });
-for await (const runAgentResponse of stream) {
-  console.log(runAgentResponse);
-}
-```
-
-If you need to cancel a stream, you can `break` from the loop
-or call `stream.controller.abort()`.
-
 ### Request & Response types
 
 This library includes TypeScript definitions for all request params and response fields. You may import and use them like so:
