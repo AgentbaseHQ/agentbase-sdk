@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.5.1 (2025-12-20)
+
+Full Changelog: [v0.5.0...v0.5.1](https://github.com/AgentbaseHQ/agentbase-sdk/compare/v0.5.0...v0.5.1)
+
+### Bug Fixes
+
+* **mcp:** correct code tool API endpoint ([bcfb002](https://github.com/AgentbaseHQ/agentbase-sdk/commit/bcfb002625e18be5004b27fe2acb179a49b6fd5c))
+* **mcp:** return correct lines on typescript errors ([db127be](https://github.com/AgentbaseHQ/agentbase-sdk/commit/db127beaa7744d617903a2137cc896677e5ad250))
+
+
+### Chores
+
+* **client:** fix logger property type ([5630a29](https://github.com/AgentbaseHQ/agentbase-sdk/commit/5630a295a71d7c5674239058d19e186285bbd3fd))
+* **internal:** codegen related update ([4bc06af](https://github.com/AgentbaseHQ/agentbase-sdk/commit/4bc06af736d19922b5b061ad8beb8bc3bba32425))
+* **internal:** codegen related update ([d9fb931](https://github.com/AgentbaseHQ/agentbase-sdk/commit/d9fb9318a37734493673d5dcbeeed4bf49e752f4))
+* **internal:** upgrade eslint ([d726698](https://github.com/AgentbaseHQ/agentbase-sdk/commit/d726698103ae364b711daa791a4fad34dc36074e))
+
+
+### Documentation
+
+* add more examples ([db1c491](https://github.com/AgentbaseHQ/agentbase-sdk/commit/db1c491a972bb7b2e37505ade05128c4a79506db))
+
 ## 0.5.0 (2025-11-06)
 
 Full Changelog: [v0.4.0...v0.5.0](https://github.com/AgentbaseHQ/agentbase-sdk/compare/v0.4.0...v0.5.0)
